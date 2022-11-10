@@ -24,19 +24,19 @@ df = get_data_from_excel()
 # ---- SIDEBAR ----
 st.sidebar.header("Please Filter Here:")
 city = st.sidebar.multiselect(
-    "Select the City:",
+    "City:",
     options=df["City"].unique(),
     default=df["City"].unique()
 )
 
 customer_type = st.sidebar.multiselect(
-    "Select the Customer Type:",
+    "Type:",
     options=df["Customer_type"].unique(),
     default=df["Customer_type"].unique(),
 )
 
 gender = st.sidebar.multiselect(
-    "Select the Gender:",
+    "Gender:",
     options=df["Gender"].unique(),
     default=df["Gender"].unique()
 )
@@ -46,16 +46,8 @@ df_selection = df.query(
 )
 
 # ---- MAINPAGE ----
-st.title(":bar_chart: Sales Dashboard")
+st.title(":bar_chart: Sales Dashboard by Xin Yang")
 st.markdown("##")
-
-html_temp = """
-		<div style="background-color:{};padding:10px;border-radius:10px">
-		<h1 style="color:white;text-align:center;">Supermarket Sales Dashboard </h1>
-		<h5 style="color:white;text-align:center;">A Web App by Xin Yang </h5>
-		</div>
-		"""
-st.markdown(html_temp.format('#464660'),unsafe_allow_html=True)
 
 # TOP KPI's
 total_sales = int(df_selection["Total"].sum())
