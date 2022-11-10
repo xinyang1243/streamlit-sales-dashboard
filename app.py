@@ -49,6 +49,14 @@ df_selection = df.query(
 st.title(":bar_chart: Sales Dashboard")
 st.markdown("##")
 
+html_temp = """
+		<div style="background-color:{};padding:10px;border-radius:10px">
+		<h1 style="color:white;text-align:center;">Supermarket Sales Dashboard </h1>
+		<h5 style="color:white;text-align:center;">A Web App by Xin Yang </h5>
+		</div>
+		"""
+st.markdown(html_temp.format('#464660'),unsafe_allow_html=True)
+
 # TOP KPI's
 total_sales = int(df_selection["Total"].sum())
 average_rating = round(df_selection["Rating"].mean(), 1)
