@@ -3,7 +3,7 @@
 
 Sales dashboard built with Python and the Streamlit library to visualize supermarket sales data and key performance indicators.
 
-## Run the app
+## Run the app locally
 ```Powershell
 # vanilla terminal
 streamlit run app.py
@@ -12,7 +12,7 @@ streamlit run app.py
 ctrl-c
 ```
 
-## Link
+## Dashboard Link
 https://xinyang1243-streamlit-sales-dashboard-app-wpcx7c.streamlit.app/
 
 ## Screenshot
