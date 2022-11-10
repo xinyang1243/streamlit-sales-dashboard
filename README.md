@@ -1,7 +1,7 @@
 
 # Interactive Dashboard with Python – Streamlit
 
-Sales Dashboard built with Python and the Streamlit library to visualize supermarket sales data and key performance indicators.
+Sales dashboard built with Python and the Streamlit library to visualize supermarket sales data and key performance indicators.
 
 ## Run the app
 ```Powershell
