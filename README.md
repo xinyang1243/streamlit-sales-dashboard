@@ -12,8 +12,8 @@ streamlit run app.py
 ctrl-c
 ```
 
-## Demo
-Sales Dashboard: https://www.salesdashboard.pythonandvba.com/
+## Link
+https://xinyang1243-streamlit-sales-dashboard-app-wpcx7c.streamlit.app/
 
 ## Screenshot
 
